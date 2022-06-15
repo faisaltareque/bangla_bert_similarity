@@ -9,7 +9,7 @@ Then clone this repo
 
 Run the following to install:
 ```bash
-$ python setup.py bdist_wheel 
+$ python setup.py bdist_wheel # to build
 $ pip install -e .
 ```
 
@@ -18,7 +18,7 @@ $ pip install -e .
 To install Bangla BERT Similarity, along with the tools you need to develop and run tests, run the following in your virtual environment:
 
 ```bash
-$ python setup.py bdist_wheel
+$ python setup.py bdist_wheel # to build
 $ pip install -e .[dev]
 ```
 
