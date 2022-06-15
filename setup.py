@@ -19,7 +19,7 @@ setup(
     packages=find_packages(where="src"),
     install_requires = [
         'normalizer @ git+https://github.com/csebuetnlp/normalizer@c3657b366d3289517d8756f55439cbab6bee5ee2',
-        'scikit-learn==1.1.1',
+        'scikit-learn',
         'transformers==4.18.0'
     ],
     extras_require ={
