@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: bangla-sentence-similarity
+Version: 0.0.1
+Summary: Bangla Sentence Similarity Score
+Home-page: https://github.com/faisaltareque/helloworld
+Author: Faisal Tareque
+Author-email: faisaltareque98@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License:: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# Bangla BERT Similarity
+
+This is a module to calculate similarity score between two bangla sentence using pretrained BERT(bangla-bert-base)
+
+## Installation
+First install [Pytorch](https://pytorch.org/get-started/locally/) on your virtual environment.
+
+Then clone this repo
+
+Run the following to install:
+```bash
+$ python setup.py bdist_wheel # to build
+$ pip install -e .
+```
+
+# Developing Bangla BERT Similarity
+
+To install Bangla BERT Similarity, along with the tools you need to develop and run tests, run the following in your virtual environment:
+
+```bash
+$ python setup.py bdist_wheel # to build
+$ pip install -e .[dev]
+```
+
+## Usage
+
+```python
+from bangla_bert_similarity import similarity_score
+score = similarity_score('তোমার সাথে দেখা হয়ে ভালো লাগলো।', 'আপনার সাথে দেখা হয়ে ভালো লাগলো।')
+```
+
+
