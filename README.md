@@ -28,3 +28,16 @@ $ pip install -e .[dev]
 from bangla_bert_similarity import similarity
 score = similarity.score('তোমার সাথে দেখা হয়ে ভালো লাগলো।', 'আপনার সাথে দেখা হয়ে ভালো লাগলো।')
 ```
+To limit maximum sequence length. Can be less that 512. Default is 512. 
+
+```python
+from bangla_bert_similarity import similarity
+score = similarity.score('তোমার সাথে দেখা হয়ে ভালো লাগলো।', 'আপনার সাথে দেখা হয়ে ভালো লাগলো।' ,  max_seq = 512)
+```
+
+To computer Euclidean(Lower means high similarity) similarity. Default is Cosine(Higher means high similarity).
+
+```python
+from bangla_bert_similarity import similarity
+score = similarity.score('তোমার সাথে দেখা হয়ে ভালো লাগলো।', 'আপনার সাথে দেখা হয়ে ভালো লাগলো।' ,  similarity_method = 'euclidean')
+```
