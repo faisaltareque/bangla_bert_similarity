@@ -12,6 +12,10 @@ Run the following to install:
 $ python setup.py bdist_wheel # to build
 $ pip install -e .
 ```
+To install from Github
+```bash
+pip install git+https://github.com/faisaltareque/bangla_bert_similarity
+```
 
 # Developing Bangla BERT Similarity
 
