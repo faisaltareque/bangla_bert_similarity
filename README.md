@@ -12,12 +12,12 @@ Run the following to install:
 $ python setup.py bdist_wheel # to build
 $ pip install -e .
 ```
-To install from Github
+To install directly from Github:
 ```bash
-pip install git+https://github.com/faisaltareque/bangla_bert_similarity
+$ pip install git+https://github.com/faisaltareque/bangla_bert_similarity
 ```
 
-# Developing Bangla BERT Similarity
+## Developing Bangla BERT Similarity
 
 To install Bangla BERT Similarity, along with the tools you need to develop and run tests, run the following in your virtual environment:
 
@@ -27,7 +27,7 @@ $ pip install -e .[dev]
 ```
 
 ## Usage
-
+For first usage it will download pretrained BERT(bangla-bert-base).
 ```python
 from bangla_bert_similarity import similarity
 score = similarity.score('তোমার সাথে দেখা হয়ে ভালো লাগলো।', 'আপনার সাথে দেখা হয়ে ভালো লাগলো।')
