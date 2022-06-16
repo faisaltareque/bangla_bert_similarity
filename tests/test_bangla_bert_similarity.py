@@ -1,4 +1,4 @@
-from bangla_bert_similarity import calculate_similarity
+from bangla_bert_similarity import similarity
 
 def test():
-    assert calculate_similarity.similarity_score('a','b') == 'ab'
+    assert similarity.score('a','b') == 'ab'

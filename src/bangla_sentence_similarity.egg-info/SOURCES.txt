@@ -1,7 +1,7 @@
 README.md
 setup.py
 src/bangla_bert_similarity/__init__.py
-src/bangla_bert_similarity/calculate_similarity.py
+src/bangla_bert_similarity/similarity.py
 src/bangla_sentence_similarity.egg-info/PKG-INFO
 src/bangla_sentence_similarity.egg-info/SOURCES.txt
 src/bangla_sentence_similarity.egg-info/dependency_links.txt

@@ -4,7 +4,7 @@
 # from transformers import AutoTokenizer, AutoModel
 # from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 
-def similarity_score(sentence_1 : str, sentence_2 : str, max_seq = 512, similarity_method = 'cosine'):
+def score(sentence_1 : str, sentence_2 : str, max_seq = 512, similarity_method = 'cosine'):
     # '''
     #     Take two Bengali sentences as first two arguments. 
     #     Maximum sequence lenth as third argument. Can be <= 512. By default 512.
