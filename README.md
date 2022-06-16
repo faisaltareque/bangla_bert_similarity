@@ -25,6 +25,6 @@ $ pip install -e .[dev]
 ## Usage
 
 ```python
-from bangla_bert_similarity import similarity_score
-score = similarity_score('তোমার সাথে দেখা হয়ে ভালো লাগলো।', 'আপনার সাথে দেখা হয়ে ভালো লাগলো।')
+from bangla_bert_similarity import similarity
+score = similarity.score('তোমার সাথে দেখা হয়ে ভালো লাগলো।', 'আপনার সাথে দেখা হয়ে ভালো লাগলো।')
 ```

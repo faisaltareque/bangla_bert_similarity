@@ -13,15 +13,13 @@ setup(
     description='Bangla Sentence Similarity Score',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    # py_modules=['bangla_bert_similarity'],
-    # package_dir={'':'src'},
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    # install_requires = [
-    #     'normalizer @ git+https://github.com/csebuetnlp/normalizer@c3657b366d3289517d8756f55439cbab6bee5ee2',
-    #     'scikit-learn',
-    #     'transformers==4.18.0'
-    # ],
+    install_requires = [
+        'normalizer @ git+https://github.com/csebuetnlp/normalizer@c3657b366d3289517d8756f55439cbab6bee5ee2',
+        'scikit-learn',
+        'transformers==4.18.0'
+    ],
     extras_require ={
         "dev":[
             "pytest >=3.7",
