@@ -77,12 +77,14 @@ def score(sentence_1 : str, sentence_2 : str, max_seq = 512, similarity_method =
 
 
 def scores(reference:str, measure_sentences:list, max_seq = 512, similarity_method = 'cosine'):
-    '''
-        Take two Bengali sentences as first two arguments. 
+    ''' 
+        Arguments:
+        Takes One Bengali sentence and A list of Bangla Sentences as first two arguments. 
         Maximum sequence lenth as third argument. Can be <= 512. By default 512.
         Similarity method for fourth argument. Can be 'cosine' or 'euclidean'. By default 'cosine'.
 
-        Returns similarity score between two sentence. If similarity method is 'euclidean' then lower score means higher similarity.
+        Returns:
+        Similarity scores between reference sentence and measure sentences. If similarity method is 'euclidean' then lower score means higher similarity.
         If similarity method is 'cosine' then higher score means higher similarity.
     '''
     max_seq_length = max_seq
